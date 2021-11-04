@@ -1,6 +1,7 @@
 services:
   unturned:
     build: .
+    stdin_open: true
     ports:
       - "27015:27015/udp"
       - "27016:27016/udp"
