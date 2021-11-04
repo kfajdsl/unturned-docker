@@ -1,0 +1,12 @@
+services:
+  unturned:
+    build: .
+    ports:
+      - "27015:27015/udp"
+      - "27016:27016/udp"
+      - "27017:27017/udp"
+    volumes:
+      - unturned:/home/steam/unturned/Servers
+volumes:
+  unturned:
+    external: true
